@@ -5,7 +5,7 @@ from typing import List
 REQUIREMENT_FILE_NAME="requirements.txt"
 HYPHEN_E_DOT = "-e ."
 
-def get_requirements()->List[str]:
+def get_requirements()->List[str]:    #-> list means for understanding that under the list create str
     
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
         requirement_list = requirement_file.readlines()
