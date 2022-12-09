@@ -3,6 +3,7 @@ import pandas as pd
 import json
 from dataclasses import dataclass
 import os
+@dataclass
 
 # Provide the mongodb localhost url to connect python to mongodb.
 

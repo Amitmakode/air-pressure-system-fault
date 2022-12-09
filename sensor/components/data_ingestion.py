@@ -14,6 +14,7 @@ class DataIngestion:
     
     def __init__(self,data_ingestion_config:config_entity.DataIngestionConfig ):
         try:
+            logging.info(f"{'>>'*20} Data Ingestion {'<<'*20}")
             self.data_ingestion_config = data_ingestion_config
         except Exception as e:
             raise SensorException(e, sys)
@@ -55,7 +56,7 @@ class DataIngestion:
             train_df.to_csv(path_or_buf=self.data_ingestion_config.train_file_path,index=False,header=True)
             test_df.to_csv(path_or_buf=self.data_ingestion_config.test_file_path,index=False,header=True)
             
-            #Prepare artifact (output)
+            #Prepare artifact
 
             data_ingestion_artifact = artifact_entity.DataIngestionArtifact(
                 feature_store_file_path=self.data_ingestion_config.feature_store_file_path,
@@ -68,6 +69,9 @@ class DataIngestion:
         except Exception as e:
             raise SensorException(error_message=e, error_detail=sys)
 
+
+
+        
 
 
         

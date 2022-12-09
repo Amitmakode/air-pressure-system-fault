@@ -3,6 +3,7 @@ from sensor.exception import SensorException
 from sensor.utils import get_collection_as_dataframe
 import sys,os
 from sensor.entity import config_entity
+from sensor.entity import artifact_entity
 from sensor.components import data_ingestion
  
 
@@ -16,3 +17,5 @@ if __name__=="__main__":
           print(data_ingestion.initiate_data_ingestion())
      except Exception as e:
           print(e)
+
+
