@@ -31,7 +31,3 @@ wget <https://raw.githubusercontent.com/avnyadav/sensor-fault-detection/main/aps
 
 ```
 
-here some changes commite in neurolab 
-
-
-made some changes
