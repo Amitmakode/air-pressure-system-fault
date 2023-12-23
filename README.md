@@ -11,13 +11,7 @@ python main.py
 ```
 
 
-To download your dataset
 
-```
-wget https://raw.githubusercontent.com/avnyadav/sensor-fault-detection/main/aps_failure_training_set1.csv
-```
-
-This is changes made in neuro lab
 
 
 Git commands
@@ -26,7 +20,7 @@ If you are starting a project and you want to use git in your project
 ```
 git init
 ```
-Note: This is going to initalize git in your source code.
+Note: This is going to initiate git in your source code.
 
 
 OR
